@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    background-color: white;
+    display: flex;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.336);
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+    height: 100px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: #EE3A43;
+}
+.logo img{
+    width: 100px;
+}
+.logo h1{
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 100;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.links ul a{
+    color: black;
+}
+.nav-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-btn button{
+    border: none;
+    background-color: #ffc222;
+    width: 180px;
+    height: 55px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+.nav-btn img{
+    width: 20px;
+}
+.nav-btn i{
+    display: none;
+}
+
+
+.container1{
+    width: 100%;
+    display: flex;
+    margin: 100px 0px;
+
+}
+.container1 div{
+    width: 48%;
+}
+.cont1{
+    display: flex;
+}
+.cont1-1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cont1-1 h1{
+    font-size: 66px;
+}
+.cont1-1 button{
+    width: 170px;
+    height: 63px;
+    border-radius: 10px;
+    background-color: #00833e;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+.cont1-2 img{
+    width: 290px;
+    margin-top: 180px;
+}
+
+
+.cont2-1 h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 40px;
+}
+.cont2-2{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+.cont2-card{
+    text-align: center;
+}
+.cont2-card p{
+    color: #00833e;
+}
+.cont2-card h4{
+    font-weight: 400;
+}
+.card{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.cont3-1{
+    text-align: center;
+    margin: 50px 0;
+}
+.cont3-1 h1{
+    font-size: 40px;
+}
+.cont3-1 p{
+    color: #00833e;
+}
+.cont3-1 img{
+    margin-top: 10px;
+}
+.cont3-2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+/*       responsive           */
+
+@media only screen and (max-width: 1300px) {
+    nav{
+        gap: 80px;
+    }
+    .links ul{
+        gap: 20px;
+    }
+    .card{
+        margin: 0 auto;
+    }
+    .cont2-side-img{
+        display: none;
+    }
+    .cont3-2 img{
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    nav{
+        justify-content: space-around;
+    }
+    .links{
+        display: none;
+    }
+    .nav-btn button, .nav-btn img{
+        display: none;
+    }
+    .nav-btn i{
+        display: block;
+    }
+    .cont1{
+        margin: 0 auto;
+    }
+    .cont1-empty{
+        display: none;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .cont3-2 img{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .cont1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont1-2 img{
+        display: none;
+    }
+    .cont3-2 img{
+        width: 200px;
+    }
+}
